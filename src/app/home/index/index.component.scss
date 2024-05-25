@@ -1,0 +1,185 @@
+.vh-100 {
+    height: 100vh;
+}
+
+.background {
+   
+}
+
+.main-title {
+    font-size: 48px;
+    margin-bottom: -10px;
+    display: inline-block;
+}
+
+.main-image {
+    height: 400px;
+    margin-top: -10px;
+    padding: 0;
+    animation: zoom 6s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    color: white; 
+    font-style: italic; 
+}
+.text-center:hover{
+    color: orangered;
+}
+
+
+.white-text {
+    color: white;
+}
+.text-center h5 {
+    color: yellow; 
+    border-bottom: 2px solid yellow; 
+    padding-bottom: 5px; 
+}
+
+.body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+    filter: brightness(0.4); 
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.letter:hover {
+    transform: translateY(-50px);
+    color: orange;
+}
+
+.orange-text {
+    color: orange;
+    font-size: 70px;
+}
+
+.orange-text:hover {
+    color: white;
+}
+
+.spacer {
+    margin-right: 20px; 
+}
+
+
+
+.futuristic-btn {
+    background-color: #00bfff; 
+    color: white;
+    border: none; 
+    border-radius: 30px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    box-shadow: 0px 0px 15px rgba(0, 191, 255, 0.5);
+    animation: pulse 2s infinite alternate; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.05); 
+    }
+}
+
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-danger::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn-danger:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  .btn-danger span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #f5031b;
+  }
+  
+
+
+.highlight-on-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+ 
+  .highlight-on-hover:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgb(217, 255, 0); 
+  }
+  
+
+  

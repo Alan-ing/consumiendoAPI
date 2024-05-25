@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+    animation: pulseLogo 2s infinite alternate;
+  }
+  
+  @keyframes pulseLogo {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+  
+  
+
+  
+.navbar-nav .nav-item a {
+  color: white;
+  text-decoration: none; 
+  font-weight: bold;
+  font-size: 18px;
+  position: relative; 
+}
+
+
+.navbar-nav .nav-item a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: rgb(247, 231, 7); 
+  transition: width 0.3s ease; 
+}
+
+.navbar-nav .nav-item a:hover::before {
+  width: 100%; 
+}
+
+
+.navbar-nav .nav-item a:hover {
+  transform: scale(1.05); 
+}
